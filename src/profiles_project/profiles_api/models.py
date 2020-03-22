@@ -1,10 +1,11 @@
 from django.db import models
-#Base of our user model:
+# Base of our user model:
 from django.contrib.auth.models import AbstractBaseUser
-#Allows us to add permissions into our django user model, on specific users for what they can/canoot do
+# Allows us to add permissions into our django user model, on specific users for what they can/canoot do
 from django.contrib.auth.models import PermissionsMixin
-#Base user manager class
+# Base user manager class
 from django.contrib.auth.models import BaseUserManager
+
 
 class UserProfileManager(BaseUserManager):
     """Helps user work with our custom user model"""
@@ -16,7 +17,7 @@ class UserProfileManager(BaseUserManager):
             raise ValueError("Users must have an email address")
 
         email = self.normalize_email(email)
-        user = self.model(email = email, name=name)
+        user = self.model(email=email, name=name)
 
         user.set_password(password)
         user.save(using=self._db)
@@ -26,7 +27,7 @@ class UserProfileManager(BaseUserManager):
     def create_superuser(self, email, name, password):
         """Creates and saves a new superuser with given details."""
 
-        user =  self.create_user = True
+        user = self.create_user(email, name, password)
 
         user.is_superuser = True
         user.is_staff = True
@@ -34,7 +35,6 @@ class UserProfileManager(BaseUserManager):
         user.save(using=self._db)
 
         return user
-
 
 
 class UserProfile(AbstractBaseUser, PermissionsMixin):

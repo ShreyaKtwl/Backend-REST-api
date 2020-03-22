@@ -4,9 +4,8 @@
     <list default="true" id="5dd3bf04-0c7f-4491-baaa-ae1f1adb87b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/profiles_project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles_project/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles_project/profiles_api/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles_project/profiles_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles_project/profiles_api/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/profiles_project/profiles_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles_project/profiles_api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profiles_project/profiles_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/profiles_project/profiles_project/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
